@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (page === 'Beranda') {
             content.innerHTML = `
+                
                 <div class="page-section">
                     <h2>Selamat datang di 3rhMount</h2>
                     <p>Klik titik 3 di pojok kanan atas untuk memilih salah satu menu untuk melihat informasi tentang gunung-gunung di Jawa Tengah.</p>
@@ -186,6 +187,26 @@ Gunung Kembang berada di bawah Gunung Sindoro dan aktivitas magma di Gunung Sind
                 </div>
             `;
         }
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Mencegah reload halaman saat form disubmit
+        
+            // Mengambil nilai dari input form
+            var username = document.getElementById('username').value;
+            var comment = document.getElementById('comment').value;
+        
+            // Membuat elemen baru untuk menampilkan komentar
+            var newComment = document.createElement('div');
+            newComment.classList.add('comment-box');
+            newComment.innerHTML = "<p><strong>" + username + ":</strong></p>" +
+                                   "<p>" + comment + "</p>";
+        
+            // Menambahkan komentar baru ke dalam daftar komentar
+            document.getElementById('comments').appendChild(newComment);
+        
+            // Mengosongkan form setelah komentar ditambahkan
+            document.getElementById('commentForm').reset();
+        });
+        
     }
 
     // Function to show fullscreen overlay

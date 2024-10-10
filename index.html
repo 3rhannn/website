@@ -13,8 +13,10 @@
         </div>
         <div id="menu-toggle">⋮</div>
     </header>
+
+    <!-- Side Menu -->
     <nav id="side-menu">
-        <div class="menu-close">✖</div>
+        <div class="menu-close" id="menu-close">✖</div> <!-- Added close icon inside -->
         <div class="menu-logo">
             <h1>3rhMount</h1>
         </div>
@@ -23,16 +25,57 @@
             <li><a href="#" data-page="Gunung di Kabupaten Wonosobo">Gunung di Kabupaten Wonosobo</a></li>
             <li><a href="#" data-page="Gunung di Kabupaten Magelang">Gunung di Kabupaten Magelang</a></li>
         </ul>
+        <!-- Info Kontak -->
+        <div class="contact-info">
+            <p>Email: <a href="mailto:erhannakmal02@gmail.com">erhannakmal02@gmail.com</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/erhnakmal" target="_blank">@erhnakmal</a></p>
+        </div>
     </nav>
-    <main id="content">
-        <!-- Content will be loaded here dynamically -->
-        <img src="foto/sindoro (1).jpg" alt="Gunung sindoro"width="200px"height="600px">
 
+    <!-- Bagian Biodata di Beranda -->
+    <main id="content">
+        <section id="biodata">
+            <!-- Ganti 'foto.jpg' dengan jalur foto Anda yang sebenarnya -->
+            <img src="foto.jpg" alt="Foto Erhan Akmal Setyadinata" class="biodata-foto">
+            <h2 class="biodata-nama">Erhan Akmal Setyadinata</h2>
+        </section>
     </main>
+
     <div id="fullscreen-overlay" class="fullscreen-overlay">
         <div class="close-fullscreen">✖</div>
         <div class="content"></div>
     </div>
+
+    <!-- Bagian Kolom Komentar -->
+    <footer>
+        <div id="comment-section">
+            <h2>Kolom Komentar</h2>
+            <form id="commentForm">
+                <input type="text" id="username" placeholder="Nama" required><br>
+                <textarea id="comment" rows="4" placeholder="Tulis komentar Anda..." required></textarea><br>
+                <button type="submit">Kirim Komentar</button>
+            </form>
+            <div id="comments"></div>
+        </div>
+
+      <!-- Bagian Kontak Sosial Media -->
+<div class="social-media">
+    <a href="https://www.instagram.com/erhnakmal" target="_blank">
+        <img src="ig.png" alt="Instagram" class="social-icon">
+        <span>@erhnakmal</span>
+    </a>
+    <a href="https://www.tiktok.com/@3rhannn" target="_blank">
+        <img src="tiktok.png" alt="TikTok" class="social-icon">
+        <span>@3rhannn</span>
+    </a>
+    <a href="mailto:erhannakmal02@gmail.com">
+        <img src="email.png" alt="Email" class="social-icon">
+        <span>erhannakmal02@gmail.com</span>
+    </a>
+</div>
+
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
