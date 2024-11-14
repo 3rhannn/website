@@ -112,6 +112,7 @@ Gunung Kembang berada di bawah Gunung Sindoro dan aktivitas magma di Gunung Sind
                         <p>Gunung Merbabu adalah gunung berapi yang menawarkan jalur pendakian yang memukau. Dengan ketinggian 3.145 meter, gunung ini adalah tujuan populer di kalangan pendaki.</p>
                     </div>
                 </div>
+                <div class="back-to-top"><a href="#">Kembali ke atas</a></div>
 
             `;
         } else if (page === 'Gunung di Kabupaten Wonosobo') {
@@ -159,6 +160,7 @@ Gunung Kembang berada di bawah Gunung Sindoro dan aktivitas magma di Gunung Sind
 </p>
                     </div>
                 </div>
+                <div class="back-to-top"><a href="#">Kembali ke atas</a></div>
             `;
         } else if (page === 'Gunung di Kabupaten Magelang') {
             content.innerHTML = `
@@ -185,6 +187,7 @@ Gunung Kembang berada di bawah Gunung Sindoro dan aktivitas magma di Gunung Sind
                         <p>Gunung Merbabu adalah gunung berapi yang menawarkan jalur pendakian yang memukau. Dengan ketinggian 3.145 meter, gunung ini adalah tujuan populer di kalangan pendaki.</p>
                     </div>
                 </div>
+                <div class="back-to-top"><a href="#">Kembali ke atas</a></div>
             `;
         }
         document.getElementById('commentForm').addEventListener('submit', function(event) {
